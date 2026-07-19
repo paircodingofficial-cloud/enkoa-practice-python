@@ -18,8 +18,8 @@
 
 ```bash
 # 자료 내려받기
-git clone https://github.com/paircodingofficial-cloud/enkoa-practice.git
-cd enkoa-practice
+git clone https://github.com/paircodingofficial-cloud/enkoa-practice-python.git
+cd enkoa-practice-python
 
 # uv 설치 — macOS / Linux
 curl -LsSf https://astral.sh/uv/install.sh | sh
@@ -82,7 +82,7 @@ python 업데이트.py
 ## 4. 폴더 구성
 
 ```
-enkoa-practice/
+enkoa-practice-python/
 ├── day02_파이썬_변수_제어문/     ← 배포 원본 (읽기 전용)
 │   ├── 교안_01, 교안_02      수업 중 함께 진행
 │   └── 과제_LV1 / LV2 / LV3  기초 · 응용 · 통합
