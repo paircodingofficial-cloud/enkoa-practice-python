@@ -69,13 +69,11 @@ error: Your local changes would be overwritten by merge
 이때만 복구 도우미를 실행하세요.
 
 ```bash
-python 업데이트.py
+uv run python 업데이트.py
 ```
 
 배포 원본을 되돌려 충돌을 없애고 새 자료를 받아옵니다.
 `내작업/` 폴더와 여러분이 만든 파일은 **건드리지 않고**, 되돌리기 전 내용은 `.백업/` 에 보관합니다.
-
-> `python` 을 못 찾으면 `uv run python 업데이트.py` 로 실행하세요.
 
 ---
 
