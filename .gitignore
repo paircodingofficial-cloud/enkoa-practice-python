@@ -1,61 +1,264 @@
-# ══════════════════════════════════════════════════════════
-#  내 작업물 — 커밋되지 않습니다
+# ══════════════════════════════════════════════════════════════
+#  파이썬 실습자료 — 학생용
+#
+#  GitHub 공식 Python 템플릿을 기반으로, 이 과정에서 실제로
+#  생기는 파일들(내 작업물 · API 키 · 모델 파일 · AI 도구 상태)을
+#  추가했습니다.
+# ══════════════════════════════════════════════════════════════
+
+# ──────────────────────────────────────────────────────────────
+#  내 작업물 — 절대 커밋되지 않습니다
 #  실습은 전부 '내작업/' 안에서 하세요.
-# ══════════════════════════════════════════════════════════
+# ──────────────────────────────────────────────────────────────
 내작업/*
 !내작업/README.md
 .백업/
 
-# ── 파이썬 가상환경 ────────────────────────────────────────
+# ──────────────────────────────────────────────────────────────
+#  비밀 정보 — 실수로 올리면 즉시 유출됩니다
+# ──────────────────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+.envrc
+*.key
+*.pem
+*.p12
+*.pfx
+credentials.json
+secrets.json
+service-account*.json
+.streamlit/secrets.toml
+.pypirc
+
+# ──────────────────────────────────────────────────────────────
+#  노트북 실행 산출물 (다시 실행하면 생깁니다)
+# ──────────────────────────────────────────────────────────────
+output/
+shop/
+geometry/
+ledger/
+textkit/
+my_utils.py
+mytools.py
+
+# ──────────────────────────────────────────────────────────────
+#  대용량 모델·체크포인트 (GitHub 파일당 100MB 한도)
+# ──────────────────────────────────────────────────────────────
+*.bin
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+*.gguf
+*.onnx
+*.h5
+*.pkl
+*.joblib
+checkpoint-*/
+runs/
+wandb/
+mlruns/
+mlflow.db
+
+# ──────────────────────────────────────────────────────────────
+#  벡터 DB · 로컬 데이터베이스
+# ──────────────────────────────────────────────────────────────
+chroma/
+.chroma/
+chroma_db/
+qdrant_storage/
+*.sqlite
+*.sqlite3
+db.sqlite3
+db.sqlite3-journal
+.langchain.db
+
+# ──────────────────────────────────────────────────────────────
+#  AI 코딩 도구가 만드는 상태 폴더
+# ──────────────────────────────────────────────────────────────
+.omc/
+.claude/
+.codex/
+.cursor/
+.windsurf/
+.continue/
+.gemini/
+.aider*
+
+# ══════════════════════════════════════════════════════════════
+#  이하 GitHub 공식 Python 템플릿
+#  (패키징 관련 항목은 실습 폴더명과 겹치지 않도록 최상위로 한정)
+# ══════════════════════════════════════════════════════════════
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[codz]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+/build/
+/develop-eggs/
+/dist/
+/downloads/
+/eggs/
+/.eggs/
+/lib/
+/lib64/
+/parts/
+/sdist/
+/var/
+/wheels/
+/share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py.cover
+*.lcov
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Translations
+*.mo
+*.pot
+
+# Django / Flask / Scrapy
+*.log
+local_settings.py
+instance/
+.webassets-cache
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+.pybuilder/
+/target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+.virtual_documents/
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pipenv / pdm / pixi / PEP 582
+.pdm-python
+.pdm-build/
+.pixi/*
+!.pixi/config.toml
+__pypackages__/
+
+# Celery / Redis / RabbitMQ / ActiveMQ
+celerybeat-schedule*
+celerybeat.pid
+*.rdb
+*.aof
+*.pid
+mnesia/
+rabbitmq/
+rabbitmq-data/
+activemq-data/
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.venv
 .venv/
 venv/
 env/
 ENV/
+env.bak/
+venv.bak/
 
-# ── 파이썬 자동 생성물 ─────────────────────────────────────
-__pycache__/
-*.py[cod]
-*$py.class
-*.egg-info/
-.pytest_cache/
-.ruff_cache/
+# Spyder / Rope project settings
+.spyderproject
+.spyproject
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy / Pyre / pytype
 .mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
 
-# ── 주피터 ────────────────────────────────────────────────
-.ipynb_checkpoints/
-*/.ipynb_checkpoints/*
-.virtual_documents/
+# Cython debug symbols
+cython_debug/
 
-# ── 노트북 실행 산출물 ─────────────────────────────────────
-output/
+# Abstra
+.abstra/
 
-# ── 비밀 정보 (API 키 등 — 절대 커밋 금지) ──────────────────
-.env
-.env.*
-*.key
-*.pem
-secrets.json
+# Ruff
+.ruff_cache/
 
-# ── 에디터 · IDE ──────────────────────────────────────────
+# Marimo
+marimo/_static/
+marimo/_lsp/
+__marimo__/
+
+# VS Code / JetBrains
 .vscode/
 .idea/
-*.swp
-*.swo
-*~
+tempCodeRunnerFile.py
 
-# ── AI 코딩 도구가 만드는 상태 폴더 ─────────────────────────
-.omc/
-.claude/
-.cursor/
-.aider*
-.codex/
-
-# ── 운영체제 ──────────────────────────────────────────────
+# ──────────────────────────────────────────────────────────────
+#  운영체제 · 편집기 임시 파일
+# ──────────────────────────────────────────────────────────────
+# macOS
 .DS_Store
 .DS_Store?
 ._*
+.AppleDouble
+.LSOverride
 .Spotlight-V100
 .Trashes
+
+# Windows
 Thumbs.db
 ehthumbs.db
 desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+.directory
+.Trash-*
+
+# 편집기 임시 파일
+*.swp
+*.swo
+*~
+~$*
