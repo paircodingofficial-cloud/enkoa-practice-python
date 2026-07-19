@@ -69,7 +69,7 @@ error: Your local changes would be overwritten by merge
 이때만 복구 도우미를 실행하세요.
 
 ```bash
-uv run python 업데이트.py
+uv run 업데이트.py
 ```
 
 배포 원본을 되돌려 충돌을 없애고 새 자료를 받아옵니다.
