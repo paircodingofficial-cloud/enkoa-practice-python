@@ -12,3 +12,7 @@ output/
 .백업/
 .env
 .DS_Store
+
+# 도구가 만드는 상태 폴더
+.omc/
+.claude/
